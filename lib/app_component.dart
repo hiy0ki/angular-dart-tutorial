@@ -8,6 +8,11 @@ import 'src/routes.dart';
 @Component(
   selector: 'my-app',
   template: '''
+   <h1>{{title}}</h1>
+   <nav>
+      <a [routerLink]="RoutePaths.heroes.toUrl()"
+        [routerLinkActive]="'active'">Heroes</a>
+   </nav>
    <router-outlet [routes]="Routes.all"></router-outlet>
   ''',
   directives: [routerDirectives],
