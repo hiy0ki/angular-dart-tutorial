@@ -16,7 +16,8 @@ import 'src/routes.dart';
         [routerLinkActive]="'active'">Heroes</a>
    </nav>
    <router-outlet [routes]="Routes.all"></router-outlet>
-  ''',
+   ''',
+  styleUrls: ['app_component.css'],
   directives: [routerDirectives],
   providers: [ClassProvider(HeroService)],
   exports: [RoutePaths,Routes],
